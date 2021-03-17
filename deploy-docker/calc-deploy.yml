@@ -1,0 +1,8 @@
+---
+- name: Pull and Run Docker Image
+  hosts: all
+  tasks:
+    - name: Pull pranay562/calculator
+      docker_image:
+        name: pranay562/calculator
+        source: pull
